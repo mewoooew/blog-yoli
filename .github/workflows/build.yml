@@ -32,7 +32,7 @@ jobs:
           #  GITHUB_TOKEN secret to authenticate in your workflow. So, you can start to deploy immediately without any
           #  configuration.
           # 不用管这个 secret，github action 会自动创建
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: mewoooew/mewoooew.github.io
           publish_branch: master
           publish_dir: ./public
