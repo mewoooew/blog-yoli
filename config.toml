@@ -1,0 +1,244 @@
+# ------------------------------------- #
+# ---- General Settings --------------- #
+# ------------------------------------- #
+baseURL = "https://www.yolichan.fun/"
+title = "yoli の 树洞 bot"
+theme = "hugo-theme-den"
+enableRobotsTXT = true       # generate robots.txt
+enableEmoji = true           # use emoji support
+hasCJKLanguage = true        # detect CJK languages for word count etc.
+preserveTaxonomyNames = true # do not make tag names lowercase
+# uglyURLs = true            # more info: https://gohugo.io/content-management/urls/#ugly-urls
+rssLimit = 20                # limit number of entries in RSS feeds
+# page_view_conter = true
+
+# Copyright, appears in the footer
+# copyright = ""             # default: author.name
+
+# Pagination
+# number of entries per page for archives, tags and categories
+# since we don't have list view, recommend a large value
+paginate = 100
+paginatePath = "page"
+
+# Syntax Hightlight
+PygmentsCodeFences = true
+PygmentsUseClasses = true    # required for shhighlight shortcode
+
+# service plugins
+
+
+# language support # en / zh-tw / other... translations present in i18n/
+defaultContentLanguage = "zh"           # Default language to use
+defaultContentLanguageInSubdir = true
+
+# Links format
+[permalinks]
+  posts = "/:year/:month/:day/:filename/"
+  categories = "/category/:slug/"      # required
+  tags = "/tag/:slug/"                 # required
+  pages = "/:slug/"
+
+[author]                     # required
+  name = "meooew"
+
+[sitemap]                    # required
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+# ------------------------------------- #
+# ---- Other Params ------------------- #
+# ------------------------------------- #
+
+[params]
+  defaultContentLanguage = "zh"
+  since = "2023-04-03"             # Site creation time
+  rssFullContent = true      # set true to use full content instead of summary
+
+  # site info (optional)
+  keywords = ["cattie","coffee","programming"]
+  description = "Catties | Programming | Photography | Broken Thoughts"
+  logoTitle = "yoli の 树洞 bot" # shown on top-left, default: title
+  siteLogoImage = "images/logo-site-1.png"     # shown besides logoTitle
+  # headerTitle = "Den"                   # default: title
+  headerImage = "images/caaaaarrot-out.jpg"
+  showAuthorCard = true # Whether to show author information below the article
+
+  showMenuLanguages = true
+  buildFuture = true
+
+  [outputs]
+  # 增加 JSON 配置
+  #home = ["HTML", "RSS", "JSON"]
+
+  #autoLoadComments = false # auto load comment when scrolling down
+# Waline评论 
+  [params.waline]
+    enable = true
+    serverURL = "https://comments.yolichan.fun/"  #已绑定域名
+    # serverURL = "https://blog-waline-668lta191-mewoooew.vercel.app/" #换成你的serverURL
+    # 参考：https://waline.js.org/
+    
+
+  # paginate style, default use numbered pagination links
+  # if true, use original "Previous" and "Next" links.
+  paginateOriginalStyle = true
+
+  # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
+  dateFormatToUse = "2006-01-02"
+
+  google_verification = ""  # Google_Verification
+
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  customCSS = ['custom.css','dencss','syntax.css']             # if ['custom.css'], load '/static/css/custom.css' file
+  customJS = []              # if ['custom.js'], load '/static/js/custom.js' file
+
+  [markup]
+      [markup.goldmark]
+        [markup.goldmark.renderer]
+          unsafe = true
+
+# ------------------------------------- #
+# ---- Related Articles --------------- #
+# ------------------------------------- #
+[related]
+  # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+  threshold = 50
+
+  # To get stable "See also" sections we, by default, exclude newer related pages.
+  includeNewer = true
+
+  # Will lower case keywords in both queries and in the indexes.
+  toLower = true
+
+[[related.indices]]
+  name = "categories"
+  weight = 200
+
+[[related.indices]]
+  name = "keywords"
+  weight = 150
+
+[[related.indices]]
+  name = "tags"
+  weight = 100
+
+
+[languages.en]
+  languageCode = "en"
+  languageName = "English"
+  contentDir = "content/en"
+  weight = 2
+
+  [[languages.en.menu.main]]
+    name = "Ideas"
+    weight = 10
+    identifier = "ideas"
+    url = "category/ideas/"
+  [[languages.en.menu.main]]
+    name = "Pocket-book"
+    weight = 20
+    identifier = "pocket-book"
+    url = "category/pocket-book/"
+  [[languages.en.menu.main]]
+    name = "Album"
+    weight = 30
+    identifier = "album"
+    url = "category/album/"
+
+  #[[languages.en.menu.social]]
+  #  name = "Telegram"
+  #  weight = 10
+  #  identifier = "telegram"
+  #  url = "https://t.me/yoli"
+  #[[languages.en.menu.social]]
+  #  name = "Twitter"
+  # weight = 20
+  # identifier = "twitter"
+  #  url = "https://twitter.com/yoli"
+  #[[languages.en.menu.social]]
+  #  name = "Instagram"
+  #  weight = 30
+  #  identifier = "instagram"
+  #  url = "https://www.instagram.com/yoli/"
+  [[languages.en.menu.social]]
+    name = "BiliBili"
+    weight = 40
+    identifier = "bilibili"
+  #  url = "https://space.bilibili.com/5374948/"
+  [[languages.en.menu.social]]
+    name = "Weibo"
+    weight = 40
+    identifier = "weibo"
+  #  url = "https://space.bilibili.com/"
+
+  [[languages.en.menu.links]]
+    name = "mewooew's GitHub"
+    weight = 10
+    identifier = "github"
+    url = "https://github.com/mewoooew"
+  [[languages.en.menu.links]]
+    name = "yoli's Blog"
+    weight = 30
+    identifier = "yoli-bot"
+    url = "https://www.yolochan.fun/"
+
+[languages.zh]
+  languageCode = "zh"
+  languageName = "中文"
+  contentDir = "content/zh"
+  weight = 1
+
+  [[languages.zh.menu.main]]
+    name = "碎碎念"
+    weight = 10
+    identifier = "ideas"
+    url = "category/ideas/"
+  [[languages.zh.menu.main]]
+    name = "笔记"
+    weight = 20
+    identifier = "pocket-book"
+    url = "category/pocket-book/"
+  [[languages.zh.menu.main]]
+    name = "相簿"
+    weight = 30
+    identifier = "album"
+    url = "category/album/"
+  #[[languages.zh.menu.social]]
+  #  name = "Telegram"
+  #  weight = 10
+  #  identifier = "telegram"
+  #  url = "https://t.me/yoli"
+  #[[languages.zh.menu.social]]
+  #  name = "Twitter"
+  # weight = 20
+  # identifier = "twitter"
+  #  url = "https://twitter.com/yoli"
+  #[[languages.zh.menu.social]]
+  #  name = "Instagram"
+  #  weight = 30
+  #  identifier = "instagram"
+  #  url = "https://www.instagram.com/"
+  [[languages.zh.menu.social]]
+    name = "BiliBili"
+    weight = 40
+    identifier = "bilibili"
+  #  url = "https://space.bilibili.com/"
+  [[languages.zh.menu.social]]
+    name = "Weibo"
+    weight = 40
+    identifier = "weibo"
+  #  url = "https://"
+
+  [[languages.zh.menu.links]]
+    name = "meooew 的 GitHub"
+    weight = 10
+    identifier = "github"
+    url = "https://github.com/mewoooew"
+  [[languages.zh.menu.links]]
+    name = "yoli の 树洞 bot"
+    weight = 30
+    identifier = "yoli-bot"
+    url = "https://www.yolichan.fun/"

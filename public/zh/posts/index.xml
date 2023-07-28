@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on yoli の 树洞 bot</title>
+    <link>https://www.yolichan.fun/zh/posts/</link>
+    <description>Recent content in Posts on yoli の 树洞 bot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Tue, 25 Jul 2023 20:05:37 +0800</lastBuildDate><atom:link href="https://www.yolichan.fun/zh/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>logseq 使用笔记</title>
+      <link>https://www.yolichan.fun/zh/2023/07/25/test/</link>
+      <pubDate>Tue, 25 Jul 2023 20:05:37 +0800</pubDate>
+      
+      <guid>https://www.yolichan.fun/zh/2023/07/25/test/</guid>
+      <description>日记功能 [[Journals]] 跳转某一天 需要结合日历插件 块 [[block]] 基本操作 生成一个块 [enter] 块内换行 [shift]+[enter] 删除 左键选中 [block]+[delete] 一个块包含多个块 [tab] 通过缩进建立从属关系 外观 颜色 灰色原点上</description>
+    </item>
+    
+  </channel>
+</rss>

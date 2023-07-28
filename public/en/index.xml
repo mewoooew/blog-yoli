@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>yoli の 树洞 bot</title>
+    <link>https://www.yolichan.fun/en/</link>
+    <description>Recent content on yoli の 树洞 bot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 25 Jul 2023 20:05:37 +0800</lastBuildDate>
+    
+    <atom:link href="https://www.yolichan.fun/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>logseq 使用笔记</title>
+      <link>https://www.yolichan.fun/en/2023/07/25/test/</link>
+      <pubDate>Tue, 25 Jul 2023 20:05:37 +0800</pubDate>
+      
+      <guid>https://www.yolichan.fun/en/2023/07/25/test/</guid>
+      <description>日记功能 [[Journals]] 跳转某一天 需要结合日历插件 块 [[block]] 基本操作 生成一个块 [enter] 块内换行 [shift]+[enter] 删除 左键选中 [block]+[delete] 一个块包含多个块 [tab] 通过缩进建立从属关系 外观 颜色 灰色原点上</description>
+      <content:encoded><![CDATA[<ul>
+<li>
+<p>日记功能 [[Journals]]</p>
+</li>
+<li>
+<ul>
+<li>跳转某一天 需要结合日历插件</li>
+</ul>
+</li>
+<li>
+<p>块 [[block]]</p>
+</li>
+<li>
+<ul>
+<li>
+<p>基本操作</p>
+</li>
+<li>
+<ul>
+<li>
+<p>生成一个块 [enter]</p>
+</li>
+<li>
+<p>块内换行 [shift]+[enter]</p>
+</li>
+<li>
+<p>删除 左键选中 [block]+[delete]</p>
+</li>
+<li>
+<p>一个块包含多个块 [tab]</p>
+</li>
+<li>
+<ul>
+<li>通过缩进建立从属关系</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>外观</p>
+</li>
+<li>
+<ul>
+<li>
+<p>颜色 灰色原点上单击右键</p>
+</li>
+<li>
+<ul>
+<li>只会在第一行显示</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>引用</p>
+</li>
+<li>
+<ul>
+<li>灰色原点上单击右键 复制块引用</li>
+</ul>
+</li>
+<li>
+<p>bug</p>
+</li>
+<li>
+<ul>
+<li>
+<p>块引用出bug的可能原因</p>
+</li>
+<li>
+<ul>
+<li>转移到另一个平台时,引用地址未更新</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>展开与折叠</p>
+</li>
+<li>
+<ul>
+<li>单击灰色竖线</li>
+</ul>
+</li>
+<li>
+<p>同时选中</p>
+</li>
+<li>
+<ul>
+<li>左键单击+[shift]+方向键</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>目录</p>
+</li>
+<li>
+<ul>
+<li>
+<p>建议在目录新建页面</p>
+</li>
+<li>
+<p>新建页面名称时不要使用 . /  \</p>
+</li>
+<li>
+<ul>
+<li>以免软件将页面与文件夹路径混淆</li>
+</ul>
+</li>
+<li>
+<p>导入的pdf文档名称不要包含多于的.或斜杠符号</p>
+</li>
+<li>
+<ul>
+<li>需要在asserts中修正</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

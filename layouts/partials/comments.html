@@ -1,0 +1,46 @@
+<head>
+  <div align="center">
+    <div class="comment-underline"></div>
+  </div>
+  <br>
+  <!-- Waline -->
+  <!-- ... -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline-meta.css"
+  />
+  <!-- ... -->
+</head>
+<body>
+  <!-- ... -->
+  <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+    const locale = {
+      nick : '叫什么好呢',
+      placeholder: '欢迎留爪',
+      sofa: '空空空~',
+      comment: 'thoughts or moods',
+      more: '多多多~',
+      emoji: 'emoji',
+      admin: '爱摸鱼的修理工',
+      level0: '潜水',
+      level1: '冒泡',
+      level2: '吐槽',
+      level3: '活跃',
+      level4: '话唠',
+      level5: '传说',
+    };
+    init({
+      el: '#waline',
+      serverURL: '{{ .Site.Params.Waline.serverURL }}',
+      locale,
+      emoji: 'https://unpkg.com/@waline/emojis@1.1.0/weibo',
+      texRenderer: false,
+    });
+  </script>
+</body>

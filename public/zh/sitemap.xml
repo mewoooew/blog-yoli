@@ -1,0 +1,88 @@
+<?xml-stylesheet type="text/xsl" href="https://www.yolichan.fun/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://www.yolichan.fun/zh/links/</loc>
+    <lastmod>2023-07-25T20:00:03+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yolichan.fun/zh/about/</loc>
+    <lastmod>2023-07-25T20:00:10+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yolichan.fun/zh/search/</loc>
+    <lastmod>2023-07-25T19:59:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yolichan.fun/zh/category/album/</loc>
+    <lastmod>2023-07-25T20:05:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yolichan.fun/zh/categories/</loc>
+    <lastmod>2023-07-25T20:05:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yolichan.fun/zh/tag/cattie/</loc>
+    <lastmod>2023-07-25T20:05:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yolichan.fun/zh/category/ideas/</loc>
+    <lastmod>2023-07-25T20:05:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yolichan.fun/zh/2023/07/25/test/</loc>
+    <lastmod>2023-07-25T20:05:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yolichan.fun/zh/category/pocket-book/</loc>
+    <lastmod>2023-07-25T20:05:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yolichan.fun/zh/posts/</loc>
+    <lastmod>2023-07-25T20:05:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yolichan.fun/zh/tags/</loc>
+    <lastmod>2023-07-25T20:05:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yolichan.fun/zh/</loc>
+    <lastmod>2023-07-25T20:05:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>
