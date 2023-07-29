@@ -3,6 +3,10 @@ name: GitHub Pages
 on:
   push:
   pull_request:
+  workflow_dispatch:
+  schedule:
+    # Runs everyday at 8:00 AM
+    - cron: "0 0 * * *"
 
 jobs:
   deploy:
