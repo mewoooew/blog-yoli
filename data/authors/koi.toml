@@ -1,0 +1,13 @@
+url = "https://github.com/mewoooew"
+
+[name]
+display = "koi"
+
+[image]
+url = "https://cdn.jsdelivr.net/gh/mewoooew/figureBed@main/img/202304022156812.png"
+
+[zh]
+description = "爱摸鱼的修理工"
+
+[en]
+description = "repairing"

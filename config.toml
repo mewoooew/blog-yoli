@@ -6,9 +6,11 @@ title = "yoli の 树洞 bot"
 theme = "hugo-theme-den"
 enableRobotsTXT = true       # generate robots.txt
 enableEmoji = true           # use emoji support
+enableRelated = true
+showAuthorCard = true
 hasCJKLanguage = true        # detect CJK languages for word count etc.
 preserveTaxonomyNames = true # do not make tag names lowercase
-# uglyURLs = true            # more info: https://gohugo.io/content-management/urls/#ugly-urls
+uglyURLs = false            # more info: https://gohugo.io/content-management/urls/#ugly-urls
 rssLimit = 20                # limit number of entries in RSS feeds
 # page_view_conter = true
 
@@ -92,17 +94,47 @@ defaultContentLanguageInSubdir = true
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  customCSS = ['custom.css','dencss','syntax.css']             # if ['custom.css'], load '/static/css/custom.css' file
+  customCSS = ['custom.css','syntax.css']              # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []              # if ['custom.js'], load '/static/js/custom.js' file
 
-  [markup]
-      [markup.goldmark]
+  # Markdown 渲染器
+[markup]
+    defaultMarkdownHandler = "goldmark"
+    [markup.goldmark]
+        [markup.goldmark.extensions]
+            definitionList = true
+            footnote = true
+            linkify = true
+            strikethrough = true
+            table = true
+            taskList = true
+            typographer = false
+        [markup.goldmark.parser]
+            attribute = true
+            autoHeadingID = true
+            autoHeadingIDType = "github"
         [markup.goldmark.renderer]
-          unsafe = true
+            hardWraps = false
+            unsafe = true
+            xHTML = false
+    [markup.highlight]
+        #style = "manni"
+        style = "nord"
+        codeFences= true
+        guessSyntax= true
+        lineNoStart= 1
+        lineNos= true
+        lineNumbersInTable= false
+        tabWidth= 4
+    [markup.tableOfContents]
+        startLevel = 2
+        endLevel = 6
+        ordered = true
 
 # ------------------------------------- #
 # ---- Related Articles --------------- #
 # ------------------------------------- #
+
 [related]
   # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
   threshold = 50
