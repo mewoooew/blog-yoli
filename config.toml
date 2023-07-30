@@ -23,6 +23,17 @@ rssLimit = 20                # limit number of entries in RSS feeds
 paginate = 100
 paginatePath = "page"
 
+# 是否开启子资源完整性验证 
+enableSRI = false 
+ # 说明：开启子资源完整性验证后，该策略将使 
+ #      MemE 的 CSS 和 JS 在像谷歌翻译这样 
+ #      的第三方网站上被禁止。为了避免开启后 
+ #      的这个问题，你的服务器必须向 CSS 和 
+ #      JS 的请求中加上以下 Header： 
+ # 
+ #      Access-Control-Allow-Origin: * 
+
+
 # Syntax Hightlight
 PygmentsCodeFences = true
 PygmentsUseClasses = true    # required for shhighlight shortcode
