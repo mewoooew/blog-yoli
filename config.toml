@@ -139,9 +139,9 @@ defaultContentLanguageInSubdir = true
         endLevel = 6
         ordered = true
 
-[outputs]
+#[outputs]
   # 增加 JSON 配置
-  home = ["HTML", "RSS", "JSON"]
+#  home = ["HTML", "RSS", "JSON"]
 # ------------------------------------- #
 # ---- Related Articles --------------- #
 # ------------------------------------- #

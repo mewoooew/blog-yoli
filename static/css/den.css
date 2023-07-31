@@ -18,6 +18,8 @@
   font-family: "LXGWNeoZhiSongCHS";
   src: url("/fonts/LXGWNeoZhiSongCHS.ttf") format("truetype");
 }
+/* friend links styles */
+@import url("custom.css"); 
 
 /* Responsive */
 @media (min-width: 768px) {
