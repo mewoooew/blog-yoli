@@ -8,6 +8,8 @@
  * Licensed under GPL V2 (https://github.com/molivier/nest/blob/master/LICENSE)
  */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700');
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fira+Code:wght@300&display=swap');
 /*霞鹜文楷*/
 @import url('https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css'); 
 @import url('https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/style.css'); 
@@ -84,8 +86,10 @@
 /* Default styling */
 body {
   /*font-family: " 'Georgia', 'Amstelvar',  serif";*/
+  /*font-family: "Atkinson Hyperlegible", sans-serif; /*
   /*font-family: "LXGW WenKai Screen", sans-serif; */
   font-family: "LXGW WenKai", sans-serif;  
+  /*font-family: "'glyph-correction', 'LXGW WenKai', 'Noto Serif SC', serif";*/
   /*font-family: "LXGWNeoZhiSongCHS",sans-serif; */
   font-size: 16px;
   color: #424242;
@@ -672,6 +676,20 @@ blockquote{
   border-bottom: 3px solid #f0485388;
 }
 
+/* search pagefind-ui config */
+:root{
+  --pagefind-ui-scale: 1 !important;
+  --pagefind-ui-primary: #03cad85e !important;
+  --pagefind-ui-text: #393939c2 !important;
+  --pagefind-ui-background: rgba(158, 209, 202, 0.106) !important;
+  --pagefind-ui-border: rgba(5, 140, 150, 0.278) !important;
+  --pagefind-ui-tag: rgba(5, 140, 150, 0.278) !important;
+  --pagefind-ui-border-width: 2px !important;
+  --pagefind-ui-border-radius: 8px !important;
+  --pagefind-ui-image-border-radius: 8px !important;
+  --pagefind-ui-image-box-ratio: 3 / 2 !important;
+  --pagefind-ui-font: "LXGW WenKai", sans-serif !important;
+}
 
 /* Spaces */
 .mr5 { margin-right: 5px;}
