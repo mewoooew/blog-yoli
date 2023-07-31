@@ -309,7 +309,7 @@ strong{
 /* Navbar */
 .header-nav {
   color:#fff;
-  font-size:12px;
+  font-size:14px;
   font-weight:600;
 }
 .header-nav .nav-menu a {
@@ -322,9 +322,9 @@ strong{
 }
 .header-nav .nav-menu a:hover{
   color:#fff;
-  font-weight:600;
+  font-weight:600 !important;
   opacity: 1;
-  background-color: rgba(5, 140, 150, 0.2);
+  background-color: rgba(95, 184, 190, 0.347) !important; 
 }
 .header-nav .nav-menu .active{
   /*color:#fff;*/
@@ -362,18 +362,21 @@ strong{
   padding: 25px 0 55px 0;
 }
 .header-title {
-  font-size: 28px;
+  font-size: 36px;
   color: #f6ffff;
   font-weight: 700;
 }
 .header-date {
   margin-top: 15px;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 600;
   color: #f6ffff;
   opacity: 0.8;
 
 }
 .header-date a {
+  font-size: 14px;
+  font-weight: 600;
   color: #f6ffff;
   text-decoration: underline;
 }
@@ -891,11 +894,14 @@ table tr td {
    
 .frienddiv {
   font-size: 12px;
-	height: 85px;
+	/* height: 85px;
 	margin-top: 10px;
   margin-right: 1px;
   margin-left: 2px;
-	width: 31%;
+	width: 31%; */
+  height: 92px;
+  margin-top: 10px;
+  width: 48%;
 	display: inline-block !important;
 	border-radius: 5px;
 	background: rgba(255, 255, 255, 0.257);
@@ -921,7 +927,7 @@ table tr td {
 }
    
 .frienddivleft {
-	width: 89px;
+	width: 92px;
 	float: left;
 }
    
@@ -931,10 +937,11 @@ table tr td {
    
 .frienddivright {
 	margin-top: 18px;
-	margin-right: 5px;
+	margin-right: 18px;
 }
    
 .friendname {
+  font-weight: 600 !important;
   color :rgba(93, 59, 71, 0.804);
   text-shadow:1px 1px 2px rgba(142, 69, 95, 0.648);
 	text-overflow: ellipsis;
@@ -951,21 +958,20 @@ table tr td {
    
 @media screen and (max-width: 600px) {
   .friendinfo {
-    display: none;
+   display: none;
   }
   .frienddivleft {
-    width: 20%;
-    margin: auto;
+   width: 84px;
+   margin: auto;
   }
   .frienddivright {
-    height: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   height: 100%;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
   }
   .friendname {
-    font-size: 14px;
+   font-size: 14px;
   }
-}
-   
+ }
