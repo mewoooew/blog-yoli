@@ -680,11 +680,11 @@ blockquote{
 :root{
   --pagefind-ui-scale: 1 !important;
   --pagefind-ui-primary: #03cad85e !important;
-  --pagefind-ui-text: #393939c2 !important;
-  --pagefind-ui-background: rgba(158, 209, 202, 0.106) !important;
-  --pagefind-ui-border: rgba(5, 140, 150, 0.278) !important;
-  --pagefind-ui-tag: rgba(5, 140, 150, 0.278) !important;
-  --pagefind-ui-border-width: 2px !important;
+  --pagefind-ui-text: #424242be !important;
+  --pagefind-ui-background: rgba(158, 209, 202, 0.035) !important;
+  --pagefind-ui-border: rgba(5, 140, 150, 0.139) !important;
+  --pagefind-ui-tag: rgba(5, 140, 150, 0.139) !important;
+  --pagefind-ui-border-width: 1px !important;
   --pagefind-ui-border-radius: 8px !important;
   --pagefind-ui-image-border-radius: 8px !important;
   --pagefind-ui-image-box-ratio: 3 / 2 !important;
