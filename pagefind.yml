@@ -1,3 +1,3 @@
 source: public
-glob: zh/*/*.{html}
+# glob: zh/*/*.{html}
 bundle_dir: search
