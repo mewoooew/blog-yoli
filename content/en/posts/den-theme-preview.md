@@ -2,7 +2,7 @@
 title: "Den Theme Preview"
 date: 2018-03-06T16:01:23+08:00
 lastmod: 2018-03-07T16:01:23+08:00
-draft: true
+draft: false
 tags: ["preview", "shortcodes", "tutorial"]
 categories: ["Notes"]
 authors:
@@ -18,20 +18,11 @@ This is a simple preview for styles in Den.
 
 A paragraph is like this.
 
-A paragraph might be very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long.
+A `paragraph` `might` `be` `very` very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very `long`.
 
 ### Headers
 #### Headers
 
-
-
-## Code blocks
-
-
-    text code blocks
-    text code blocks
-    text code blocks
-    text code blocks
 
 ## Highlighted Code Blocks
 
@@ -46,6 +37,12 @@ print('hello world')
 >
 > This is second pragraph.
 >
+
+## 自定义引用
+
+{{< quote >}}
+十里青山远，潮平路带沙。数声啼鸟怨年华。又是凄凉时候，在天涯。白露收残月，清风散晓霞。绿杨堤畔问荷花。记得年时沽酒，那人家。
+{{< /quote >}}
 
 ## Lists
 
@@ -113,7 +110,5 @@ A rule.
 
 This is [an example](http://example.com/"Title") inline link.
 
-## Images
-
-
-![Globe](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Octicons-globe.svg/240px-Octicons-globe.svg.png)
+## Figure
+{{<figure src="/images/globe.svg" alt="Globe" align="aligncenter" width="500" caption="**Globe**">}}

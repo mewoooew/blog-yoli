@@ -75,7 +75,8 @@ defaultContentLanguageInSubdir = true
   logoTitle = "yoli の 树洞 bot" # shown on top-left, default: title
   siteLogoImage = "images/logo-site-1.png"     # shown besides logoTitle
   # headerTitle = "Den"                   # default: title
-  headerImage = "images/caaaaarrot-out.jpg"
+  # headerImage = "images/caaaaarrot-out.jpg"
+  headerImage = "images/background-flowers-wall-crop.jpg"
   showAuthorCard = true # Whether to show author information below the article
 
   showMenuLanguages = true
@@ -102,7 +103,7 @@ defaultContentLanguageInSubdir = true
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  customCSS = ['den.css','custom.css','syntax.css']              # if ['custom.css'], load '/static/css/custom.css' file
+  customCSS = ['custom.css']              # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []              # if ['custom.js'], load '/static/js/custom.js' file
 
   # Markdown 渲染器
@@ -112,7 +113,7 @@ defaultContentLanguageInSubdir = true
         [markup.goldmark.extensions]
             definitionList = true
             footnote = true
-            linkify = true
+            linkify = true 
             strikethrough = true
             table = true
             taskList = true
