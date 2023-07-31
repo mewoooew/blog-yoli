@@ -29,6 +29,14 @@ jobs:
       - name: Build
         run: hugo
 
+      - name: Install nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm i pagefind    #配置搜索工具
+      - run: npx pagefind --source public --bundle-dir search  #使用pagefind生成静态索引
+
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

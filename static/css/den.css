@@ -8,7 +8,6 @@
  * Licensed under GPL V2 (https://github.com/molivier/nest/blob/master/LICENSE)
  */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700');
-@import url('http://fonts.googleapis.com/css?family=Pinyon+Script');
 /*霞鹜文楷*/
 @import url('https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css'); 
 @import url('https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/style.css'); 
@@ -687,7 +686,7 @@ blockquote{
 
 .footer{
   background-color: rgba(5, 140, 150, 0.11);
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   font-size: 14px;
   font-weight: 300;
   text-align: left;

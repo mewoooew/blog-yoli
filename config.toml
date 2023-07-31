@@ -68,7 +68,7 @@ defaultContentLanguageInSubdir = true
   defaultContentLanguage = "zh"
   since = "2023-04-03"             # Site creation time
   rssFullContent = true      # set true to use full content instead of summary
-
+  fastSearch = true
   # site info (optional)
   keywords = ["cattie","coffee","programming"]
   description = "Catties | Programming | Photography | Broken Thoughts"
@@ -80,10 +80,7 @@ defaultContentLanguageInSubdir = true
 
   showMenuLanguages = true
   buildFuture = true
-
-  [outputs]
-  # 增加 JSON 配置
-  #home = ["HTML", "RSS", "JSON"]
+  
 
   #autoLoadComments = false # auto load comment when scrolling down
 # Waline评论 
@@ -142,6 +139,9 @@ defaultContentLanguageInSubdir = true
         endLevel = 6
         ordered = true
 
+[outputs]
+  # 增加 JSON 配置
+  home = ["HTML", "RSS", "JSON"]
 # ------------------------------------- #
 # ---- Related Articles --------------- #
 # ------------------------------------- #
