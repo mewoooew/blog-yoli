@@ -1,8 +1,11 @@
 #!/bin/bash
 # 使用方法:
-# yoli.sh "提交说明的内容"
+# bash yoli.sh "提交说明的内容"
+
+# 在命令行输出绿色提示"Deploying updates to GitHub..."
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+# 将中文目录下的文章复制到英文目录下
 cp -rf ./content/zh/posts/* ./content/en/posts/
 
 # 清除缓存
