@@ -1,5 +1,5 @@
 ---
-title: "搜索"
+title: "search"
 date: 2023-07-31T13:57:23+08:00
 menu: "main"
 weight: 110

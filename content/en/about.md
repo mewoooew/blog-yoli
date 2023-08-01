@@ -1,5 +1,5 @@
 ---
-title: "关于"
+title: "about"
 date: 2023-07-25T20:00:10+08:00
 menu: "main"
 weight: 100
