@@ -25,6 +25,6 @@ rss_ignore: true
 
 [^点半九]: [点半九 给我的blog加上搜索功能](https://www.dianbanjiu.com/post/%E7%BB%99%E6%88%91%E7%9A%84blog%E5%8A%A0%E4%B8%8A%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/)
 
-> Pagefind 是一个独立的命令行工具，可以通过 npm install pagefind 来安装。其原理是：运行 Pagefind 命令，扫描所有静态网页并生成索引；用户搜索时，通过网页中内嵌的 JavaScript 脚本来访问预先生成的索引，从而实现静态全文检索。[^白汤四物]
+> Pagefind 是一个独立的命令行工具. 其原理是：运行 Pagefind 命令，扫描所有静态网页并生成索引；用户搜索时，通过网页中内嵌的 JavaScript 脚本来访问预先生成的索引，从而实现静态全文检索。[^白汤四物]
 
 [^白汤四物]: [白汤四物 为 Hugo 静态网站添加全文检索功能](https://www.fournoas.com/posts/adding-full-text-search-to-a-hugo-static-website/)

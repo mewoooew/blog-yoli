@@ -69,7 +69,7 @@ defaultContentLanguageInSubdir = true
   since = "2023-04-03"             # Site creation time
   rssFullContent = true      # set true to use full content instead of summary
   fastSearch = true
-  # site info (optional)
+  # site info (optional) 
   keywords = ["cattie","coffee","programming"]
   description = "Catties | Programming | Photography | Broken Thoughts"
   logoTitle = "yoli の 树洞 bot" # shown on top-left, default: title
@@ -103,7 +103,7 @@ defaultContentLanguageInSubdir = true
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  customCSS = ['custom.css']              # if ['custom.css'], load '/static/css/custom.css' file
+  customCSS = ['den.css']              # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []              # if ['custom.js'], load '/static/js/custom.js' file
 
   # Markdown 渲染器
