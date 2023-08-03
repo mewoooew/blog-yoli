@@ -73,10 +73,10 @@ defaultContentLanguageInSubdir = true
   keywords = ["cattie","coffee","programming"]
   description = "Catties | Programming | Photography | Broken Thoughts"
   logoTitle = "yoli の 树洞 bot" # shown on top-left, default: title
-  siteLogoImage = "images/logo-site-1.png"     # shown besides logoTitle
+  siteLogoImage = "images/logo-site-230802.png"     # shown besides logoTitle
   # headerTitle = "Den"                   # default: title
   # headerImage = "images/caaaaarrot-out.jpg"
-  headerImage = "images/background-flowers-wall-crop.jpg"
+  headerImage = "images/background-flowers-wall.jpg"
   showAuthorCard = true # Whether to show author information below the article
 
   showMenuLanguages = true
