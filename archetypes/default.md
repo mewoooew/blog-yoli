@@ -3,7 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: false
 tags: []
-categories: []
+categories: ["{{ trim (replace .File.Dir "posts/" "") "/" }}"]
 authors:
 - "mewooew"
 ---

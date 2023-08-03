@@ -10,7 +10,7 @@ authors:
 
 ### 序 建站之初
 
-[hugo](https://gohugo.io/)使用`go`语言进行编译生成静态博客文件系统, 将文件系统发布到服务器上, 即可通过访问服务器来访问生成的静态博客网站, 这里服务器可以自己购买, 也可以直接部署在[GitHub](https://github.com/)提供的免费服务器上, 即[GitHub pages](https://pages.github.com/)的方式. `hugo`生成网站时拥有极快的渲染速度, 而且无需在服务器上搭建数据库, 免去了数据库系统学习和管理的烦恼(为了搭建网站提前选修了一个学期数据库系统原理的本人知道真相后😢), 由于之前搭建云主机使吃了不少苦, 这里果断选择了部署到`GitHub pages`上的方案, 无需自己维护服务, 更稳定安全, 因为建站初衷是为了开一个记录的树洞bot, 作为友人🍧的生日礼物, 所以搭配一个具有特殊意义的域名是必不可少哒. 总的来说, 一个完整的静态博客demo至少需要以下三部分的准备:
+[hugo](https://gohugo.io/)使用`go`语言进行编译生成静态博客文件系统, 将文件系统发布到服务器上, 即可通过访问服务器来访问生成的静态博客网站, 这里服务器可以自己购买, 也可以直接部署在[GitHub](https://github.com/)提供的免费服务器上, 即[GitHub pages](https://pages.github.com/)的方式. `hugo`生成网站时拥有极快的渲染速度, 而且无需在服务器上搭建数据库, 免去了数据库系统学习和管理的烦恼(为了搭建网站提前选修了一个学期数据库系统原理的本人知道真相后😢), 由于以前搭建云主机吃了不少苦, 这里果断选择了部署到`GitHub pages`上的方案, 无需自己维护服务, 更稳定安全, 且免费啊啊啊(每个仓库1GB的免费容量). 因为建站之初是为了开一个记录的树洞bot, 作为友人🍧的生日礼物, 所以搭配一个具有特殊意义的自定义域名是必不可少哒. 总的来说, 一个完整的静态博客demo至少需要以下三部分的准备:
 
 * 静态网站生成器 - `hugo`
 * 存放页面的仓库 - 通过`GitHub pages`的方式托管在`GitHub`家的免费服务器上
@@ -42,7 +42,7 @@ authors:
 
   ![image-20230802152737164](https://cdn.jsdelivr.net/gh/mewoooew/picGO@main/images/yu-blog%E5%B0%81%E9%9D%A2%E6%88%AA%E5%9B%BE.png)
 
-   `pseudoyu`前辈写的[搭建教程](https://www.pseudoyu.com/en/2022/05/29/deploy_your_blog_using_hugo_and_github_action/#top)[^pseudoyu]也很详尽, 多亏了他的教程`yolichan的树洞bot`才能从零到有, 也通过github借鉴了很多部署方案, 最最主要的是, 前辈在搭建博客时使用的方案应该都是比对挑选过的, 很稳定. 
+   `pseudoyu`前辈写的[搭建教程](https://www.pseudoyu.com/en/2022/05/29/deploy_your_blog_using_hugo_and_github_action/#top)[^pseudoyu]也很详尽, 多亏了他的教程`yolichan的树洞bot`才能从零到有, 也在github借鉴了一些前辈的部署方案, 最最主要的是, 前辈在搭建博客时使用的方案应该都是比对挑选过的, 很稳定. 
 
   参考教程, 将原主题仓库fork到自己的`GitHub`账户后,在本地使用`git submodule`进行链接到fork后形成的远程仓库.
 
@@ -104,7 +104,7 @@ authors:
   ```
 
   生成文章默认模板 `echoo/blog-yoli/archetypes/default.md`
-  如果配置文件设置了默认语言(例如中文zh)的话,指令应该是``hugo new zh/posts/blog-test.md`` 不然文章会不显示. 除了`关于页`\ `搜索页`\ `友链页`等,平时的blog文章应该都放在``blog-yoli/content/zh/posts``文件夹下.
+  如果配置文件设置了默认语言(例如中文zh)的话,生成的文章会被放到``blog-yoli/content/zh/posts/``目录下 . 除了`关于页`\ `搜索页`\ `友链页`等,平时的blog文章应该都放在``blog-yoli/content/zh/posts``文件夹下.
 
 * `hugo`还有一大优点就是可以本地调试预览
 
