@@ -63,6 +63,9 @@ defaultContentLanguageInSubdir = true
 # ------------------------------------- #
 # ---- Other Params ------------------- #
 # ------------------------------------- #
+enableGitInfo = true
+[frontmatter]
+  lastmod = [":git", "lastmod", ":fileModTime"]
 
 [params]
   defaultContentLanguage = "zh"
