@@ -13,7 +13,7 @@ authors:
 
 `hugo`官网文章[Search for your Hugo Website](https://gohugo.io/tools/search/)介绍了几种为静态网站添加全文检索功能的方法。其中比较有特色的搜索工具有基于倒挂索引(`inverted index`)的`lunr.js`和`Fuse.js`, 二者都是使用比较广泛的全文搜索工具, 后者还具有模糊查询的功能. 不过二者在搜索时需要浏览器把所有文章请求下来, 建立倒挂索引`index.json`, 再对索引进行搜索, 随着网站内容增加, `index.json`的体积会越来越大, 会导致网络请求延时, 若考虑生成`index.json`时只输出标题等关键字, 会导致搜索质量大幅下降. 因此将目光转向了[pagefind](https://pagefind.app/) 搜索工具. 
 
-`Pagefind`是一个独立的命令行工具, 其原理是：运行`Pagefind`命令, 扫描所有静态网页并生成索引; 用户搜索时, 通过网页中内嵌的`JavaScript`脚本来访问预先生成的索引，从而实现静态全文检索。[^白汤四物] 也就是说, 网站内容的索引实在生成网站之前就已经完成了, 无需浏览器进行生成, 减少了后期网络请求延时的顾虑. 而且在使用了`GitHub Action`的前提下, `Pagefind`生成索引的步骤也可以集成到博客部署的工作流中, 不必每次生成网站都要运行一遍`Pagefind`.
+`Pagefind`是一个独立的命令行工具, 其原理是：运行`Pagefind`命令, 扫描所有静态网页并生成索引; 用户搜索时, 通过网页中内嵌的`JavaScript`脚本来访问预先生成的索引，从而实现静态全文检索。[^白汤四物] 也就是说, 网站内容的索引在生成网站之前就已经形成了, 无需在浏览器进行生成, 减少了后期网络请求延时的顾虑. 而且在使用了`GitHub Action`的前提下, `Pagefind`生成索引的步骤也可以集成到博客部署的工作流中, 不必每次生成网站都要运行一遍`Pagefind`.
 
 [^白汤四物]:[白汤四物: 为 Hugo 静态网站添加全文检索功能](https://www.fournoas.com/posts/adding-full-text-search-to-a-hugo-static-website/)
 
@@ -23,7 +23,7 @@ authors:
 
 [^点半九]:[点半九: 给我的blog加上搜索功能](https://www.dianbanjiu.com/post/%E7%BB%99%E6%88%91%E7%9A%84blog%E5%8A%A0%E4%B8%8A%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/)
 
-在`hugo`中调用`Pagefind`的方式通常为在自定义`html`页面模板或者自定义引入`shortcode`,再在搜索页面`markdown`文档引入相关代码,这里图省事参考了同一主题`hugo-theme-den`的使用者[pseudoyu](https://www.pseudoyu.com/zh/search/)作者的代码,使用shortcode的方式, 同时还结合了[白汤四物](https://www.fournoas.com/posts/adding-full-text-search-to-a-hugo-static-website/) \ [点半九](https://www.dianbanjiu.com/post/%E7%BB%99%E6%88%91%E7%9A%84blog%E5%8A%A0%E4%B8%8A%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/)等作者的教程了解了实现站内检索功能是如何实现的. 
+在`hugo`中调用`Pagefind`的方式通常为在自定义`html`页面模板或者自定义引入`shortcode`,再在搜索页面`markdown`文档引入相关代码,这里图省事参考了同一主题`hugo-theme-den`的使用者[pseudoyu](https://www.pseudoyu.com/zh/search/)作者的代码,使用shortcode的方式, 同时还结合了[白汤四物](https://www.fournoas.com/posts/adding-full-text-search-to-a-hugo-static-website/) \ [点半九](https://www.dianbanjiu.com/post/%E7%BB%99%E6%88%91%E7%9A%84blog%E5%8A%A0%E4%B8%8A%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/)等作者的教程了解了站内检索功能是如何实现的. 
 
 ### 安装Pagefind并生成静态索引
 
