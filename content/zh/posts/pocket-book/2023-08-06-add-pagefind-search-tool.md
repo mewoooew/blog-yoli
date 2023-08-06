@@ -13,7 +13,7 @@ authors:
 
 `hugo`官网文章[Search for your Hugo Website](https://gohugo.io/tools/search/)介绍了几种为静态网站添加全文检索功能的方法。其中比较有特色的搜索工具有基于倒挂索引(`inverted index`)的`lunr.js`和`Fuse.js`, 二者都是使用比较广泛的全文搜索工具, 后者还具有模糊查询的功能. 不过二者在搜索时需要浏览器把所有文章请求下来, 建立倒挂索引`index.json`, 再对索引进行搜索, 随着网站内容增加, `index.json`的体积会越来越大, 会导致网络请求延时, 若考虑生成`index.json`时只输出标题等关键字, 会导致搜索质量大幅下降. 因此将目光转向了[pagefind](https://pagefind.app/) 搜索工具. 
 
-`Pagefind`是一个独立的命令行工具, `Pagefind`是一个独立的命令行工具, 其原理是：运行`Pagefind`命令, 扫描所有静态网页并生成索引; 用户搜索时, 通过网页中内嵌的`JavaScript`脚本来访问预先生成的索引，从而实现静态全文检索。[^白汤四物] 也就是说, 网站内容的索引实在生成网站之前就已经完成了, 无需浏览器进行生成, 减少了后期网络请求延时的顾虑. 而且在使用了`GitHub Action`的前提下, `Pagefind`生成索引的步骤也可以集成到博客部署的工作流中, 不必每次生成网站都要运行一遍`Pagefind`.
+`Pagefind`是一个独立的命令行工具, 其原理是：运行`Pagefind`命令, 扫描所有静态网页并生成索引; 用户搜索时, 通过网页中内嵌的`JavaScript`脚本来访问预先生成的索引，从而实现静态全文检索。[^白汤四物] 也就是说, 网站内容的索引实在生成网站之前就已经完成了, 无需浏览器进行生成, 减少了后期网络请求延时的顾虑. 而且在使用了`GitHub Action`的前提下, `Pagefind`生成索引的步骤也可以集成到博客部署的工作流中, 不必每次生成网站都要运行一遍`Pagefind`.
 
 [^白汤四物]:[白汤四物: 为 Hugo 静态网站添加全文检索功能](https://www.fournoas.com/posts/adding-full-text-search-to-a-hugo-static-website/)
 
