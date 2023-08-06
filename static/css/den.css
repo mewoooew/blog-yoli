@@ -508,23 +508,24 @@ strong {
   display: block;
 }
 
+/* Table */
 table {
   overflow: auto;
-  width: 100% !important;
-  display: block;
-  margin:1.8em;
-  border-spacing: 5px !important;
+  display: table;
+  width: 100%;
+  border-spacing: 2px;
   border-collapse: collapse;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.content table tr th,
-.content table tr tbody {
-  padding: 0.3rem 0.8rem !important;
-  border: 1px solid gray !important;
+table tr th,
+table tr td {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid gray;
+  font-size: 0.8rem !important;
+  text-align: center;
 }
-
 
 /* 图片 */
 /*.content img {
