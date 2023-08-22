@@ -13,6 +13,7 @@ set -e
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # 将中文目录下的文章复制到英文目录下
+rm -rf ./content/en/posts/*
 cp -rf ./content/zh/posts/* ./content/en/posts/
 
 # 清除缓存
