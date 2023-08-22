@@ -1,5 +1,5 @@
 ---
-title: "# hugo 配置友链页面"
+title: "#hugo 配置友链页面"
 date: 2023-08-22T11:13:19+08:00
 lastmod: 2023-08-22T11:13:19+08:00
 draft: false
