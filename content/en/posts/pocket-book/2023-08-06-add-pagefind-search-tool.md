@@ -1,5 +1,5 @@
 ---
-title: "#Pagefind 为静态博客配置站内搜索工具"
+title: "#hugo #Pagefind 为静态博客配置站内搜索工具"
 date: 2023-08-06T20:18:13+08:00
 lastmod: 2023-08-06T20:18:13+08:00
 draft: false
