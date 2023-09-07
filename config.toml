@@ -84,7 +84,7 @@ enableGitInfo = true
 
   showMenuLanguages = true
   buildFuture = true
-  
+  enableCodeCopy = true
 
   #autoLoadComments = false # auto load comment when scrolling down
 # Waline评论 
@@ -107,7 +107,8 @@ enableGitInfo = true
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = ['den.css']              # if ['custom.css'], load '/static/css/custom.css' file
-  customJS = []              # if ['custom.js'], load '/static/js/custom.js' file
+  custom_js = ["clipboard.js"]
+  # if ['custom.js'], load '/static/js/custom.js' file
 
   # Markdown 渲染器
 [markup]
@@ -138,6 +139,7 @@ enableGitInfo = true
         lineNos= true
         lineNumbersInTable= false
         tabWidth= 4
+        noClasses = false
     [markup.tableOfContents]
         startLevel = 2
         endLevel = 6

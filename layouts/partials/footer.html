@@ -70,5 +70,12 @@
       </div>
     </div>
   </div>
+    <!-- copy code -->
+    {{ if (findRE "<code" .Content 1) }}
+    
+        <script src="{{"/js/clipboard.js" | relURL}}"></script>
+    
+    {{ end }}
 </div>
-<script src="static/js/copy-to-clipboard.js"></script>
+
+  

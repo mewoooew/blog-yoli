@@ -222,9 +222,55 @@ pre {
   color: #ffffffeb;
 }
 
-.highlight pre {
-  background: url('static/images/codeWindowButton_0902.png');
+/* 仿 mac 编辑器导航风格 */
+.highlight pre::before{
+	content: '';
+  display: block;
+  background: url('/images/codeWindowButton_0902.png');
+  height: 30px;
+  width: 100%;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  margin-top: -30px;
+  margin-bottom: -7px;
+  border-radius: 6px;
+  background-position: 2px 10px;
+  position: absolute;
+  z-index: 4; 
+}
+
+.copy-code-button {
+  /* color: #a54e4e; */
+  display: inline-block;
   border: none;
+  background-color: #a3a3a300;
+  background-size: 30px;
+  margin-top: 0px;
+  margin-left: 18px;
+  margin-right: 6px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1; 
+  opacity: 0.4;
+  
+}
+
+.copy-code-button > svg {
+  fill: #c89393;
+}
+
+.copy-code-button:hover,
+.copy-code-button:focus,
+pre:active ~ .copy-code-button,
+pre:focus ~ .copy-code-button,
+div.highlight:active > .copy-code-button,
+div.highlight:focus > .copy-code-button {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.highlight pre {
+  position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 15px;
@@ -243,41 +289,6 @@ pre {
   border-radius: 8px;
 }
 
-/* 仿 mac 编辑器导航风格 */
-.highlight pre::before{
-	content: '';
-  display: block;
-  background: url('/images/codeWindowButton_0902.png');
-  height: 30px;
-  width: 100%;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  margin-top: -30px;
-  margin-bottom: -7px;
-  border-radius: 6px;
-  background-position: 2px 10px;
-  position: absolute;
-  z-index: 4;
-}
-
-.highlight-copy-btn {
-  position: absolute;
-  bottom: 7px;
-  right: 7px;
-  border: 0;
-  border-radius: 4px;
-  padding: 1px;
-  font-size: 0.8em;
-  line-height: 1.8;
-  color: #fff;
-  background-color: #777;
-  min-width: 55px;
-  text-align: center;
-}
-
-.highlight-copy-btn:hover {
-  background-color: #666;
-}
 
 /* Titles */
 
@@ -494,13 +505,15 @@ strong {
 /* Content */
 
 .content {
+  margin-top: 30px;
+  margin-bottom: 30px;
   background-color: #fff;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
-  border-left: 1px solid rgba(5, 140, 150, 0.278);
-  border-right: 1px solid rgba(5, 140, 150, 0.278);
+  border: 2px solid #c8c8c83f;
+  border-radius: 10px;
 }
 
 .content img {
@@ -514,8 +527,9 @@ strong {
   margin-right: 45px;
   margin-top: 45px;
   margin-bottom: 45px;
-  */
-  border: 0.1px solid rgba(5, 140, 150, 0.278);
+  border: 0.1px solid rgba(5, 140, 150, 0.278); */
+  border: 2px solid #c8c8c83f;
+  border-radius: 10px;
 }
 
 .content.highlight pre {
@@ -819,13 +833,16 @@ blockquote {
   padding: 10px;
   */
   background-color: #fff;
-  margin-top: 18px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding-top: 25px;
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
   font-weight: 300;
   line-height: 1.8;
+  border: 2px solid #c8c8c83f;
+  border-radius: 10px;
 
   /*
   border-left: 1px solid rgba(0,0,0,0.1);
@@ -1004,6 +1021,28 @@ table tr td {
   border: 1px solid gray;
 }
 */
+
+/* 滚动条 */
+html{
+  ::-webkit-scrollbar {
+      width: 25px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: #6fabab34;
+      border-radius: 20px;
+      border: 6px solid transparent;
+      background-clip: content-box;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #a8bbbf;
+    }
+}
 
 /*
 /* 回到顶部 */
