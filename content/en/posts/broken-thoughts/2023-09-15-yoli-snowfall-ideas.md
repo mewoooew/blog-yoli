@@ -6,7 +6,7 @@ draft: false
 tags: ["snowfall","雪里","Himo","dream machine","碎片"]
 categories: ["broken-thoughts"]
 authors:
-- "雪里"
+- "yoli"
 ---
 
 > 23-09-11 Mon Wechat
