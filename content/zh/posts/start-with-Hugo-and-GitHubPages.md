@@ -3,7 +3,7 @@ title: "#hugo #GitHub-Pages #GitHub-action 博客搭建笔记  "
 date: 2023-07-25T20:05:37+08:00
 draft: false
 tags: ["Programming","hugo","github"]
-categories: ["ideas","pocket-book","album"]
+categories: ["broken-thoughts","pocket-book","time-machine"]
 authors:
 - "koi"
 ---
@@ -332,4 +332,3 @@ authors:
 - [ ] 添加回到顶部按钮
 - [ ] 等一个适合的logo
 - [ ] 完善音乐播放等多媒体配置
-

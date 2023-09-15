@@ -31,7 +31,7 @@
           <h2><a href="{{ .Permalink }}">{{ $name }}</a></h2>
           <dl class="row">
               {{ range first ($.Site.Params.numListPosts | default 10) $pages }}
-              <dt class="col-md-3">{{ .Date.Format ($.Site.Params.dateFormatToUse | default "Mon 02 January 2006") }}</dt>
+              <dt class="col-md-3">{{ .Date.Format ($.Site.Params.dateFormatToUse | default "Mon 02 Jan 2006") }}</dt>
               <dd class="col-md-9"><a href="{{ .Permalink }}">{{ .Title }}</a></dd>
               {{ end }}
           </dl>

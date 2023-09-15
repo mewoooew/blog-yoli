@@ -23,18 +23,18 @@ if [ $# -eq 1 ]
     read postfilename
 fi
 
-# 选择文章分类 1 ideas | 2 pocket-book | 3 album
+# 选择文章分类 1 broken-thoughts | 2 pocket-book | 3 time-machine
 echo -e "\033[0;32m input number to chose ONE category in: \033[0m"
-echo -e "\033[0;33m 1 ideas | 2 pocket-book | 3 album  \033[0m"
+echo -e "\033[0;33m 1 broken-thoughts | 2 pocket-book | 3 time-machine  \033[0m"
 read category
 # 设置默认分类
-default_category="ideas"
+default_category="broken-thoughts"
 case $category in
-  1)  category="ideas"
+  1)  category="broken-thoughts"
   ;;
   2)  category="pocket-book"
   ;;
-  3)  category="album"
+  3)  category="time-machine"
   ;;
   "") 
       # 为空则归到默认分类
@@ -44,7 +44,7 @@ case $category in
   ;;
   *)  # 未在指定范围内, 归到默认分类
       echo -e "\033[0;31m input error \n\033[0m"
-      echo -e "\033[0;32m archive to default_category: ideas \n \033[0m"
+      echo -e "\033[0;32m archive to default_category: broken-thoughts \n \033[0m"
       category=$default_category
   ;;
 esac

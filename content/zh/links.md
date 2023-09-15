@@ -7,8 +7,7 @@ rss_ignore: true
 ---
 
 
-{{< friend name="koi" url="https://www.yolichan.fun" logo="https://cdn.jsdelivr.net/gh/mewoooew/figureBed@main/img/202304022156812.png" word="爱摸鱼的修理工" >}}
+{{< friend name="koi" url="https://github.com/mewoooew" logo="/images/avatar-koi-book-flower.jpg" word="爱摸鱼的修理工" >}}
 
-{{< friend name="koi" url="https://www.yolichan.fun" logo="https://cdn.jsdelivr.net/gh/mewoooew/figureBed@main/img/202304022156812.png" word="爱摸鱼的修理工 2 号" >}}
-
+{{< friend name="koi" url="https://github.com/mewoooew" logo="/images/avatar-koi-book-flower.jpg" word="爱摸鱼的修理工 2 号" >}}
 

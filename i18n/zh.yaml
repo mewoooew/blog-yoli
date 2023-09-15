@@ -87,3 +87,21 @@
 
 - id: author
   translation: 作者
+
+- id: broken-thoughts
+  translation: 碎碎念
+
+- id: pocket-book
+  translation: 口袋书
+
+- id: time-machine
+  translation: 时光机
+
+- id: liks
+  translation: 友链
+
+- id: about
+  translation: 关于
+
+- id: search
+  translation: 搜索
