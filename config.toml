@@ -53,7 +53,7 @@ defaultContentLanguageInSubdir = true
   pages = "/:slug/"
 
 [author]                     # required
-  name = "meooew"
+  name = "koi"
 
 [sitemap]                    # required
   changefreq = "weekly"
@@ -224,7 +224,7 @@ enableGitInfo = true
   #  url = "https://space.bilibili.com/"
 
   [[languages.en.menu.links]]
-    name = "mewooew's GitHub"
+    name = "koi's GitHub"
     weight = 10
     identifier = "github"
     url = "https://github.com/mewoooew"
@@ -282,7 +282,7 @@ enableGitInfo = true
   #  url = "https://"
 
   [[languages.zh.menu.links]]
-    name = "meooew 的 GitHub"
+    name = "koi 的 GitHub"
     weight = 10
     identifier = "github"
     url = "https://github.com/mewoooew"

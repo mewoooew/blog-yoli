@@ -157,6 +157,6 @@ authors:
 
 ### 最终呈现效果
 
-{{< friend name="koi" url="https://www.yolichan.fun" logo="https://cdn.jsdelivr.net/gh/mewoooew/figureBed@main/img/202304022156812.png" word="爱摸鱼的修理工" >}}
+{{< friend name="koi" url="https://github.com/mewoooew" logo="/images/avatar-koi.jpg" word="爱摸鱼的修理工" >}}
 
 ![image-20230822114732588](https://cdn.jsdelivr.net/gh/mewoooew/picGO@main/images/hugo-friend-link-show.png)

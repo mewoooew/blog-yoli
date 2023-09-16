@@ -1,5 +1,5 @@
 ---
-title: "#ideas #moods broken thoughts bot"
+title: "#ideas #moods 虚拟梦境机"
 date: 2023-09-11T11:38:02+08:00
 lastmod: 2023-09-11T11:38:02+08:00
 draft: false
