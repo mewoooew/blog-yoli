@@ -24,11 +24,13 @@ rss_ignore: true
 
 {{< friend name="雪里" url="https://www.yolichan.fun" logo="/images/avatar-yoli-xiaohaili.png"  word="Don't let gravity get you down" >}}
 
-非常nice和inspiring的yoli酱本酱🍧, 能像冒泡泡一样冒出有趣的点子, 是来自Gryffindor的勇气代表. (koi视角: 能在猫咪🐱和小狮子🦁两种属性之间来回切换的神奇友人)  
+
+
+>  koi视角: 非常nice和inspiring的yoli酱本酱🍧, 能像冒泡泡一样冒出有趣的点子, 是来自Gryffindor的勇气代表. 能在猫咪🐱和小狮子🦁两种属性之间来回切换的神奇友人. 
 
 ### koi
 
 {{< friend name="koi" url="https://github.com/mewoooew" logo="/images/avatar-koi-book-flower.jpg" word="爱摸鱼的修理工" >}}
 
-爱失忆的鱼鱼, 新手村不具名coder, 日常由以下三部分组成: 制造bug, 成为bug, 超越bug👻. 
+>  爱失忆的鱼鱼, 新手村不具名coder, 日常由以下三部分组成: 制造bug, 成为bug, 超越bug👻. 
 
